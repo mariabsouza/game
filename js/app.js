@@ -3,7 +3,6 @@ function init() {
   const grid = document.querySelector('#grid')
 
   const scoreKeeper = document.querySelector('#score')
-  const gameInfo = document.querySelector('.game-info')
 
 
   // Grid size
@@ -65,6 +64,7 @@ function init() {
     inPlay[0].classList.add(second)
     inPlay[1].classList.remove(second)
     inPlay[1].classList.add(first) 
+    
 
     firstMove = true
     
@@ -94,10 +94,13 @@ function init() {
       for (let i = 0; i < arrayCheck.length; i++) {
         if (cell && arrayCheck[i][0] && arrayCheck[i][1] && cell.classList[1] === arrayCheck[i][0].classList[1] && arrayCheck[i][0].classList[1] === arrayCheck[i][1].classList[1]) {
           cell.classList.remove(`${cell.classList[1]}`)
-          arrayCheck[i][0].classList.remove(`${arrayCheck[i][0].classList[1]}`)
-          arrayCheck[i][1].classList.remove(`${arrayCheck[i][1].classList[1]}`)
+          arrayCheck[i][0].classList.remove(arrayCheck[i][0].classList[1])
+          arrayCheck[i][1].classList.remove(arrayCheck[i][1].classList[1])
+          
+
           //Score aqui
           if (firstMove) {
+
             score += 1
             scoreKeeper.innerHTML = `<p>Score: </p><span>${score}</span>`
           }

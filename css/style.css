@@ -4,20 +4,10 @@
 }
 
 body {
-  /* background-image: url('../assets/background.jpg');
-  background-size: cover;
-  background-color: #053256; */
   background-color: #2167ae;
+  background-image: url('../assets/background.jpg'); 
 }
 
-/* .game {
-  margin: 100px 0px;
-} */
-
-/* .game > div {
-  padding: 0px 50px;
-  width: 50%;
-} */
 
 .game {
   display: flex;
@@ -45,22 +35,23 @@ h2 {
   margin: auto;
   flex-wrap: wrap;
   width: 576px;
-  height: 440px;
-  /* From https://css.glass */
+  height: 446px;
+
   background: rgba(255, 255, 255, 0.2);
+
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  /* box-shadow: 5px 5px 20px 5px #c597fc; */
-  /* display: none; */
+
+
 }
 
 .cell {
   height: 60px;
   width: 60px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid transparent;
   /* background-color: rgba(0, 0, 0, 0.488); */
 }
 
@@ -99,6 +90,7 @@ margin: auto;
   background-size: contain;
   background-position: center;
 }
+
 
 .first-pick {
   border: 2px solid white;
