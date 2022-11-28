@@ -1,0 +1,106 @@
+@font-face {
+  font-family: digital;
+  src: url('../assets/ds_digital/DS-DIGI.TTF');
+}
+
+body {
+  /* background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-color: #053256; */
+  background-color: #2167ae;
+}
+
+/* .game {
+  margin: 100px 0px;
+} */
+
+/* .game > div {
+  padding: 0px 50px;
+  width: 50%;
+} */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* text format */
+h1 {
+  font-family: 'Cormorant Garamond', 'Montserrat';
+  font-weight: 300;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: #5200b5;
+}
+
+
+
+/* grid layout */
+#grid {
+  margin: auto;
+  flex-wrap: wrap;
+  width: 576px;
+  height: 440px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* box-shadow: 5px 5px 20px 5px #c597fc; */
+  /* display: none; */
+}
+
+.cell {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.488); */
+}
+
+#score {
+  font-family: 'digital';
+  color: #fff;
+margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: b; */
+  border-radius: 30px;
+  width: 50%;
+  
+  margin-bottom: 2rem;
+  
+}
+
+/* candies */
+.green {
+  background-image: url('../assets/green.png');
+  background-size: contain;
+  background-position: center;
+}
+.purple {
+  background-image: url('../assets/purple.png');
+  background-size: contain;
+  background-position: center;
+}
+.orange {
+  background-image: url('../assets/orange.png');
+  background-size: contain;
+  background-position: center;
+}
+.blue {
+  background-image: url('../assets/blue.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.first-pick {
+  border: 2px solid white;
+  filter: brightness(120%);
+}
